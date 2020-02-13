@@ -1,0 +1,21 @@
+<%= render 'layouts/navbar' %>
+
+<div class="container">
+
+  <div class="form">
+    <h1>Let your flat be up to date!</h1>
+    <p>The more up to date the best</p>
+    <%= simple_form_for @flat do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :smoking %>
+      <%= f.submit "edit the flat", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <p><%= link_to 'Back to home', flats_path %></p>
+
+</div>

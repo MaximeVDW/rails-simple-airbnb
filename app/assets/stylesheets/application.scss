@@ -1,0 +1,41 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+// My font awsome
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.flat-content {
+  display: flex;
+}
+
+.show-card {
+  background-color: white;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.booking-info {
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.share-card {
+  background-color: white;
+  margin-left: 30px;
+}
+

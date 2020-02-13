@@ -1,0 +1,21 @@
+<%= render 'layouts/navbar' %>
+
+<div class="container">
+
+  <div class="form">
+    <h1>Upload and get loaded: that simple!</h1>
+    <p>Fill in all the informations for your flat</p>
+    <%= simple_form_for @flat do |f| %>
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+      <%= f.input :smoking %>
+      <%= f.submit "add the flat", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+
+  <p><%= link_to 'Back to home', flats_path %></p>
+
+</div>

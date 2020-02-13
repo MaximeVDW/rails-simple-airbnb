@@ -1,0 +1,51 @@
+<%= render 'layouts/navbar' %>
+
+<div class="container">
+  <img src="https://picsum.photos/200" class="img-fluid width: 100% \9;" alt="Responsive image">
+</div>
+
+<div class="container">
+  <div class="flat-content">
+
+    <div class="show-cards">
+      <div class="show-card">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="show-card">
+        <h4>A bit more about this flat</h4>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="show-card">
+        <h4>Reservation details</h4>
+        <p><%= @flat.number_of_guests %> <%= @flat.price_per_night %> <%= @flat.smoking %></p>
+      </div>
+    </div>
+
+    <div class="booking-card">
+      <div class="booking-info">
+        <h4>Book this place!</h4>
+        <p>!!!! for to fill !!!!</p>
+        <p>!!!! for to fill !!!!</p>
+        <p>!!!! for to fill !!!!</p>
+        <p>!!!! for to fill !!!!</p>
+      </div>
+      <div class="share-card d-flex">
+        <p>Share</p>
+        <div>
+          <ul class="list-inline">
+            <li class="list-inline-item">F</li>
+            <li class="list-inline-item">T</li>
+            <li class="list-inline-item">P</li>
+            <li class="list-inline-item">M</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p><%= link_to 'Add a comment' %></p>
+  <p><%= link_to 'Back to home', flats_path %></p>
+</div>
